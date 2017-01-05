@@ -3,8 +3,7 @@ CREATE TABLE IF NOT EXISTS Passengers (
   name VARCHAR(45) NULL,
   surname VARCHAR(45) NULL,
   email VARCHAR(64) NULL,
-  password BYTEA NULL,
-  salt BYTEA NULL,
+  password VARCHAR(64) NULL,
   PRIMARY KEY (id))
 
   CREATE TABLE IF NOT EXISTS Controllers (
@@ -12,8 +11,7 @@ CREATE TABLE IF NOT EXISTS Passengers (
   name VARCHAR(45) NULL,
   surname VARCHAR(45) NULL,
   email VARCHAR(64) NULL,
-  password BYTEA NULL,
-  salt BYTEA NULL,
+  password VARCHAR(64) NULL,
   PRIMARY KEY (id))
 
 
@@ -21,8 +19,7 @@ CREATE TABLE IF NOT EXISTS Passengers (
   id SERIAL,
   name VARCHAR(45) NULL,
   email VARCHAR(45) NULL,
-  password BYTEA NULL,
-  salt BYTEA NULL,
+  password VARCHAR(64) NULL,
   PRIMARY KEY (id))
 
 
@@ -31,8 +28,7 @@ CREATE TABLE IF NOT EXISTS Passengers (
   name VARCHAR(45) NULL,
   surname VARCHAR(45) NULL,
   email VARCHAR(45) NULL,
-  password BYTEA NULL,
-  salt BYTEA NULL,
+  password VARCHAR(64) NULL,
   PRIMARY KEY (id))
 
   CREATE TABLE IF NOT EXISTS Manufacturers (
