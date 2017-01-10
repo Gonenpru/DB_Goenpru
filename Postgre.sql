@@ -152,10 +152,9 @@ CREATE INDEX fk_Routes_Airlines1_idx ON Routes (Airline_id ASC);
 
 CREATE TABLE IF NOT EXISTS Flights (
   id SERIAL,
-  duration INT NULL,
-  delay INT NULL,
+  duration DATE NULL,
+  delay DATE NULL,
   date_departure DATE NULL,
-  date_arrival DATE NULL,
   Route_id INT NOT NULL,
   Plane_id INT NOT NULL,
   Gate_id INT NOT NULL,
